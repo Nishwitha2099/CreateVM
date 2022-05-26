@@ -24,3 +24,6 @@ variable "nsgName" {
 variable "nicName" {
     type = string
 }
+variable "vm" {
+    type = string
+}
