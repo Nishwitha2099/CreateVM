@@ -19,5 +19,5 @@ variable "publicipname" {
     type = string
 }
 variable "nsgName" {
-    type = string;
+    type = string
 }
