@@ -1,16 +1,16 @@
 variable "resourceGroupName" {
-    type = string;
+    type = string
 }
 variable "location" {
-    type = string;
+    type = string
 }
 variable "tags" {
     type = map(any)
 }
 variable "vnaetname" {
-    type = string;
+    type = string
 }
 
 variable "subnetname" {
-    type = string;
+    type = string
 }
