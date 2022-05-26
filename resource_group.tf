@@ -64,3 +64,20 @@ resource "azurerm_network_interface_security_group_association" "NICAssociationW
   network_interface_id      = azurerm_network_interface.myTerraformNic.id
   network_security_group_id = azurerm_network_security_group.myTerraformNSG.id
 }
+
+resource "random_id" "randomId" {
+  keepers = {
+    resource_group_name      = azurerm_resource_group.myTerraformGroup.name
+  }
+  byte_length = 8
+}
+
+resource "azurerm_storage_account" "myTerraformStorageAccpunt" {
+  name                     = "dia${random_id.randomId.hex}"
+  resource_group_name      = azurerm_resource_group.myTerraformGroup.name
+  location                 = var.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+
+  tags = var.tags
+}
