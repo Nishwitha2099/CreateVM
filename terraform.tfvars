@@ -1,4 +1,4 @@
-location = "East US"
+location = "centralUS"
 resourceGroupName = "myTeraformGroup"
 tags = {
     environment = "test"
