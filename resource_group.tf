@@ -18,3 +18,12 @@ resource "azurerm_virtual_network" "myTerraformNetwork" {
   virtual_network_name = azurerm_virtual_network.myTerraformNetwork.name
   address_prefixes     = ["10.0.2.0/24"]
   } 
+
+  resource "azurerm_public_ip" "myTerraformIPAddress" {
+  name                    = var.publicipname
+  location                = var.location
+  resource_group_name     = azurerm_resource_group.myTerraformGroup.name
+  allocation_method       = "Dynamic"
+  
+  tags = var.tags
+}
