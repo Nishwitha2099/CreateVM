@@ -1,6 +1,6 @@
 location = "East US"
 resourceGroupName = "myTeraformGroup"
-tags {
+tags = {
     environment = "test"
 }
 vnaetname = "myTerraformVNet"
