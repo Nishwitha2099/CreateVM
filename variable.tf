@@ -18,3 +18,6 @@ variable "subnetname" {
 variable "publicipname" {
     type = string
 }
+variable "nsgName" {
+    type = string;
+}

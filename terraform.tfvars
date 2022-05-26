@@ -6,3 +6,4 @@ tags = {
 vnetname = "myTerraformVNet"
 subnetname = "myTerraformSubnet"
 publicipname = "myTerraformIP"
+nsgName = "myTerraformNSGRule"
