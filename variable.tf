@@ -22,5 +22,5 @@ variable "nsgName" {
     type = string
 }
 variable "nicName" {
-    type = string;
+    type = string
 }
