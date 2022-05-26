@@ -7,3 +7,10 @@ variable "location" {
 variable "tags" {
     type = map(any)
 }
+variable "vnaetname" {
+    type = string;
+}
+
+variable "subnetname" {
+    type = string;
+}
