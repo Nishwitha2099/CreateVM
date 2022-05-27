@@ -86,8 +86,7 @@ resource "azurerm_linux_virtual_machine" "myTerraformVM" {
   name                = var.vm
   resource_group_name = azurerm_resource_group.myTerraformGroup.name
   location            = var.location
-  size                = "Standard_DC8s_v3"
-  generation          = 1
+  size                = "Standard_D11_v2"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.myTerraformNic.id,
